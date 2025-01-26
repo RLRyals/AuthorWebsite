@@ -1,0 +1,51 @@
+body {
+  font-family: 'Comic Sans', Arial, Helvetica, sans-serif;
+  color: #fff;
+  background-color: #0a1d24;
+  padding: 20px;
+}
+
+    body.home {
+        background-image: url('/images/website_background.jpg'); /* Path to the image */
+        background-size: cover; /* Ensures the image covers the entire page */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents tiling */
+        height: 100vh; /* Makes the body fill the viewport */
+        margin: 0; /* Removes default margin */
+        font-family: Arial, sans-serif; /* Example: Set default font */
+        color: #fff; /* Example: Text color for contrast */
+    }
+
+.nav-menu {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.nav-item {
+    display: inline;
+    margin-right: 2px; /* Adjust spacing as needed */
+    border-style: outset;
+}
+
+.nav-link {
+    text-decoration:none;
+    color: #00ffff;
+    padding:2px;
+    margin:1px;
+  
+}
+
+.nav-active {
+    font-weight: bold;
+    color: #ff6347;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}

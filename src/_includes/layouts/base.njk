@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+			<title>{{ pageTitle }}</title>
+			<link rel="stylesheet" href="/style.css">
+</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+		<header>
+			<h2 class="visually-hidden">Top level navigation menu</h2>
+			<nav>
+				{{ collections.all | eleventyNavigation | eleventyNavigationToHtml(navigationOptions) | safe }}
+			</nav>
+		</header>
+		
+		<main id="skip">
+			<heading-anchors>
+				{{ content | safe }}
+			</heading-anchors>
+		</main>
+		<footer>
+			<p>&copy; {{ now | date("%Y") }} Rebecca Ryals</p>
+		</footer>
+	</body>
+</html>
