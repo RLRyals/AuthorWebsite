@@ -18,5 +18,14 @@
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
     "eslint": "^9.19.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RLRyals/AuthorWebsite.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/RLRyals/AuthorWebsite/issues"
+  },
+  "homepage": "https://github.com/RLRyals/AuthorWebsite#readme"
 }

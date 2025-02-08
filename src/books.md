@@ -1,6 +1,6 @@
 ---
 layout: layout.njk
-title: Rebecca Ryals - Books
+title: "{{ author.title }} - Books"
 eleventyNavigation:
   key: Books
   order: 4
@@ -16,12 +16,12 @@ Detective Jax Spencer walks a dangerous line in a near-future Chicago where magi
 "Magic & Metal" is a pulse-pounding urban fantasy noir that explores the cost of identity in a world that fears difference. It's "Altered Carbon" meets "The Dresden Files," with a dragon-shaped twist that will keep listeners guessing until the very last page. 
 Being released in serial format in audiobook and text.
 
-### Magic & Mind Games - Rebecca Ryals a magic & Metal Novel
+### Magic & Mind Games - a magic & Metal Novel
 When a string of suicides plague the city's elite, all bearing the mark of a powerful emotional manipulator, Jax must delve into the treacherous world of Mood Parlors and confront his own past to stop a killer who preys on the mind.
 
 Coming next year.
 
-### Magic & Mortals Rebecca Ryals
+### Magic & Mortals 
 Magic & Mortals - Book 3
 Prepare for an adrenaline-fueled adventure with Magic & Mortals, the third book in Rebecca Ryals' spellbinding Urban Fantasy detective series. Join detective Jax Spencer a his next case. A grassroots movement seeking to expose the truth about dragons and their place in society gains traction, throwing the city’s delicate balance into turmoil. Now Jax must choose between protecting his kind and upholding the law.
 

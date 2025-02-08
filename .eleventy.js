@@ -3,6 +3,8 @@ const navigationOptions = require('./src/_data/navigationConfig');
 const { DateTime } = require("luxon");
 const links = require('./src/_data/links.js'); 
 const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
+const authorData = require("./src/_data/author");
+const site = require("./src/_data/site");
 
 
 module.exports = function(eleventyConfig) {
@@ -15,6 +17,11 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   // Add a global data filter or variable for navigation options
   eleventyConfig.addGlobalData("navigationOptions", navigationOptions);
+  // Select the current author's profile based on `currentPenName`
+  const activeProfile = authorData.profiles[authorData.currentPenName];
+
+  eleventyConfig.addGlobalData("author", activeProfile);
+    
 
   eleventyConfig.addFilter("dateIso", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toISO();
@@ -23,9 +30,13 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("dateReadable", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("MMMM dd, yyyy");
   });
-    eleventyConfig.addFilter("date", (dateObj, format = "yyyy LLL dd") => {
-    return DateTime.fromJSDate(dateObj).toFormat(format);
-  });
+
+  //eleventyConfig.addFilter("Date", (dateObj, format = "yyyy LLL dd") => {
+  //  return DateTime.fromJSDate(dateObj).toFormat(format);
+  //});
+
+    eleventyConfig.addGlobalData("site", site);
+  
 
     eleventyConfig.addShortcode("link", function (key) {
     return links[key] || "#"; // Return the link if it exists, or "#" as a fallback

@@ -1,20 +1,21 @@
 ---
 layout: layout.njk
-title: Rebecca Ryals
+title: {{ author.title }}
 eleventyNavigation:
   key: Home
   order: 0
 ---
 
-<h1>Welcome to My Cozy Author's Nook</h1>
+<h1>Welcome to {{ author.penName }}'s Website</h1>
 <div class='intro'>
-        <p>Hello fellow storytellers!</p>
-        <p>Step into a world where words weave magic and stories come alive. This is your sanctuary - a place to explore the art of fiction writing, share your tales, and connect with like-minded authors.</p>
-        <!-- Optional image placeholder -->
-        <!-- img src='path-to-your-image.jpg' alt='A cozy nook for writing' style='max-width=100%; height:auto;' -->
-        <!-- Call-to-action -->
-        <p><strong>Join me on this literary journey as we craft narratives that captivate hearts and minds.</strong></p>
-    </div>
+    <p>Genres: {{ author.genre }}</p>
+    <a href="{{ author.social.twitter }}">Twitter</a>
+    <a href="{{ author.social.facebook }}">Facebook</a>
+    <!-- Optional image placeholder -->
+    <!-- img src='path-to-your-image.jpg' alt='A cozy nook for writing' style='max-width=100%; height:auto;' -->
+    <!-- Call-to-action -->
+    <p><strong>Join me on this literary journey as we craft narratives that captivate hearts and minds.</strong></p>
+</div>
 <ul>
 {% for post in collections.post %}
   <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
