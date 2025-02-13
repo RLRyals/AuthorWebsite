@@ -1,6 +1,6 @@
 ---
 layout: layout.njk
-title: "{{ author.title }} - Books"
+title: " - Books"
 eleventyNavigation:
   key: Books
   order: 4

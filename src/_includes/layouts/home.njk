@@ -2,7 +2,7 @@
 layout: layouts/base.njk
 ---
 
-{%- css %}{% include "style.css" %}{% endcss %}
+{%- css %}{% include "/css/{{ author.styles }}" %}{% endcss %}
 
 
 {{ content | safe }}

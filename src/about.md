@@ -1,6 +1,6 @@
 ---
 layout: layout.njk
-title: "{{ author.title }} - About"
+title: " - About"
 eleventyNavigation:
   key: About
   order: 10

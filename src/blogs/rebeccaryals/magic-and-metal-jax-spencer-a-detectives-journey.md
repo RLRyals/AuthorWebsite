@@ -1,5 +1,6 @@
 ---
 layout: layouts/post.njk
+author: "Rebecca Ryals"
 title: Magic & Metal - Jax Spencer - Dective story
 tags: post
 description: Chapter 1 introduction to my character.

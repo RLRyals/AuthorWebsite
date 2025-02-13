@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Magic & Metal",
+    "series": "Magic & Metal",
+    "image": "/images/rebeccaryals/books/magic_and_metal_cover.png",
+    "link": "/books/"
+  },
+  {
+    "name": "Magic & Monsters",
+    "series": "Magic & Metal",
+    "image": "/images/rebeccaryals/books/magic_and_metal_cover.png",
+    "link": "/books/"
+  },
+  {
+    "name": "Magic & Mind Games",
+    "series": "Magic & Metal",
+    "image": "/images/rebeccaryals/books/magic_and_metal_cover.png",
+    "link": "/books/"
+  }
+]

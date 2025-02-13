@@ -5,10 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Grab title from the page data and dump it here -->
-  <title>{{ title }}</title>
-  <link rel="stylesheet" href="/style.css">
+  <title>{{ author.pageTitle }}{{ pageTitle }}</title>
+  <link rel="stylesheet" href="/css/{{ author.styles }}"/>
 </head>
-<body class="{% if page.url == '/' %}home{% endif %}">
+<body style="background-image: url('{{ author.background }}');" class="{% if page.url == '/' %}home{% endif %}">
 <nav>
     {{ collections.all | eleventyNavigation | eleventyNavigationToHtml(navigationOptions) | safe }}
   </nav>

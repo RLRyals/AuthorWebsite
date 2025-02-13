@@ -1,5 +1,5 @@
 ---
-layout: ../_includes/layouts/base.njk
+layout: layouts/base.njk
 pageTitle: Special Offer
 permalink: /special-offer/
 ---

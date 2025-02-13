@@ -1,26 +1,26 @@
-<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-			<title>{{ pageTitle }}</title>
-			<link rel="stylesheet" href="/style.css">
-</head>
-	<body>
-		<a href="#skip" class="visually-hidden">Skip to main content</a>
-		<header>
-			<h2 class="visually-hidden">Top level navigation menu</h2>
-			<nav>
-				{{ collections.all | eleventyNavigation | eleventyNavigationToHtml(navigationOptions) | safe }}
-			</nav>
-		</header>
-		
-		<main id="skip">
-			<heading-anchors>
-				{{ content | safe }}
-			</heading-anchors>
-		</main>
-		<footer>
-			<p>&copy; {{ site.now }} {{ author.penName }}</p>
-		</footer>
-	</body>
+  <head>
+    <meta charset="utf-8"/>
+      <title>{{ author.penName }}{{ pageTitle }}</title>
+      <link rel="stylesheet" href="/css/{{ author.styles }}"/>
+    
+  </head>
+  <body style="background-image: url('{{ author.background }}');">
+    <a href="#skip" class="visually-hidden">Skip to main content</a>
+    <header>
+      <h2 class="visually-hidden">Top level navigation menu</h2>
+      <nav>
+        {{ collections.all | eleventyNavigation | eleventyNavigationToHtml(navigationOptions) | safe }}
+      </nav>
+    </header>
+
+    <main id="skip">
+      <heading-anchors>
+        {{ content | safe }}
+      </heading-anchors>
+    </main>
+    <footer>
+      <p>&#169; {{ site.now }} {{ author.penName }}</p>
+    </footer>
+  </body>
 </html>
